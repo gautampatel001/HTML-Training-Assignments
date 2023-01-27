@@ -278,7 +278,7 @@
     position: absolute;
     text-align: left;
     letter-spacing: 0px;
-    color: #c8242f;
+    color: #C8242F;
   }
   #analysis {
     top: 85px;
@@ -534,6 +534,7 @@
     top: 24.5px;
     left: 750px;
     color: #c8242f;
+    border-bottom: solid 1px #c8242f ;
   }
   
   #graph-image {
@@ -664,4 +665,109 @@
   #pending{
       color: #BABABA;
   }
- 
+
+  /* inner page css */
+  #body{
+    top: 0px;
+   left: 0px;
+width: 1560px;
+height: 1970px;
+position: relative;
+background: #FAFAFA 0% 0% no-repeat padding-box;
+}
+.innerpagesidebar{
+    top: 80px;
+    left: 0px;
+    width: 242px;
+    height: 1890px;
+    position: absolute;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+#form {
+    position: absolute;
+    top: 182px;
+    left: 292px;
+    width: 1218px;
+    height: 1749px;
+    background: #FFFFFF 0% 0% no-repeat padding-box
+}
+#Ana{
+    color: #000000;
+    position: absolute;
+    top: 121px;
+    left: 290px;
+    font-size: 30px;
+}
+#onecolumn{
+    margin-top: 22.52px;
+    margin-left: 29px;
+    color: #3E3E3E;
+    font-size: 25px;
+    font-weight: bold;
+}
+.form-group{
+    padding: 14.5px 30px 0px 30px;
+}
+.form-group-2{
+    padding:0px 30px 0px 30px;
+}
+.form-group-3{
+    padding:20px 30px 0px 30px;
+}
+#twocolumn{
+    margin-top: 44px;
+    margin-left: 29px;
+    color: #3E3E3E;
+    font-size: 25px;
+    font-weight: bold;
+}
+.row{
+    padding:15.98px 30.5px 0px 30.5px;
+}
+select:invalid{
+   color:  #ADADAD;
+}
+#threecolumn{
+    margin-top: 44px;
+    margin-left: 29px;
+    color: #3E3E3E;
+    font-size: 25px;
+    font-weight: bold;
+}
+#iuser{
+    border: 1px dashed #ADADAD;
+}
+#fourcolumn{
+    margin-top: 44px;
+    margin-left: 29px;
+    color: #3E3E3E;
+    font-size: 25px;
+    font-weight: bold;
+}
+#uiborder{
+    border: 1px solid #FF3B3B;
+}
+#uidesign{
+    color: #FF3B3B;
+}
+#otherdesign{
+    margin-top: 44px;
+    margin-left: 29px;
+    color: #3E3E3E;
+    font-size: 25px;
+    font-weight: bold;
+}
+#fileupload{
+    margin-top: 21.13px;
+    margin-left: 29px;
+    color: #3E3E3E;
+    font-size: 20px;
+    font-weight: bold;
+}
+#radio{
+    margin-top: 36.15px;
+    margin-left: 29px;
+    color: #3E3E3E;
+    font-size: 20px;
+    font-weight: bold;
+}
