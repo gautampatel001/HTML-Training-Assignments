@@ -1,203 +1,320 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Inner page</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style3.css">
+    <title>InnerPage</title>
+    <script>
+        function openNav() {
+            var x = document.getElementById("d-sidebar");
+            if (x.style.display == "block") {
+                x.style.display = "none";
+            }
+            else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </head>
 
 <body>
+    <div class="d-main-container container-fluid">
+        <div class="d-header row">
+            <div class="col-xl-3 col-md-4 col-sm-6 col-menu">
+                <button type="button" onclick="openNav()">
+                    <img src="/images/menu-bar.svg" class="d-menu-bar" alt="menu-bar">
+                </button>
+                <img src="/images/logo.svg" class="d-logo" alt="logo">
+            </div>
+            <div class="col-xl-6 col-md-4 col-search">
+                <img src="/images/search-icon.svg" class="d-search-icon" alt="">
+                <input type="text" class="d-searchbar" placeholder="search">
+            </div>
+            <div class="col-xl-3 col-md-4 col-profile">
+                <img src="/images/notification-icon.svg" class="d-notifi-icon" alt="notification-icon">
+                <div>
+                    <img src="/images/profile.png" class="d-profile" alt="profile">
+                    <span class="profile-name">John Doe</span>
+                </div>
+                <img src="/images/downward-arrow.svg" class="d-downward" alt="downward-arrow">
+            </div>
+        </div>
+        <div class="d-middle">
+            <div class="d-sidebar row" id="d-sidebar">
 
-    <div id="body">
-        <div class="head">
+                <div class="d-dash-icon  sidebox">
+                    <img src="/images/dashboard-default.svg" class="d-dashboard-img" alt="">
+                    <span class="d-text-default ">Dashboard</span>
+                </div>
+                <div class="d-analysis-icon s-selected-icon sidebox">
+                    <img src="/images/graph-active.svg" class="d-graph-img" alt="">
+                    <span class="d-text-default d-text-selected">Analysis</span>
+                </div>
+                <div class="d-inbox-icon sidebox">
+                    <img src="/images/inbox-default.svg" class="d-inbox-img" alt="">
+                    <span class="d-text-default">Inbox</span>
+                </div>
+                <div class="d-history-icon sidebox">
+                    <img src="/images/clock-default.svg" class="d-clock-img" alt="">
+                    <span class="d-text-default">History</span>
+                </div>
+                <div class="d-users-icon sidebox">
+                    <img src="/images/user-default.svg" class="d-user-img" alt="">
+                    <span class="d-text-default">Users</span>
+                </div>
+                <div class="d-maintainance-icon sidebox">
+                    <img src="/images/maintenance-default.svg" class="d-maintenance-img" alt="">
+                    <span class="d-text-default">Maintanance</span>
+                </div>
+                <div class="d-setting-icon sidebox">
+                    <img src="/images/setting-default.svg" class="d-setting-img" alt="">
+                    <span class="d-text-default">Setting</span>
+                </div>
+            </div>
+            <main style="margin-top: 58px;">
+                <div class="container pt-4">
+                    <div class="row">
+                        <h1>Analysis</h1>
+                    </div>
+                    <div class="row ms-5 my-3 form-header"> One column</div>
+                    <div class="row ms-5 me-4 my-1"> <input class="form-control" type="text" placeholder="Name"
+                            aria-label="default input example"></div>
+                    <div class="row ms-4 me-4 my-3">
+                        <div class="input-group ms-3 my-3 me-4">
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option selected>Dropdown</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row ms-5 my-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                            placeholder="Multiple line"></textarea>
+                    </div>
+                    <div class="row form-header ms-5 my-3"> Two column</div>
+                    <div class="row ms-5 my-3">
+                        <div class="col-md-6">
+                            <input class="form-control" type="text" placeholder="Name"
+                                aria-label="default input example">
+                        </div>
+                        <div class="col-md-6">
+                            <input class="form-control" type="text" placeholder="Username"
+                                aria-label="default input example" value="johndoe">
+                        </div>
+                    </div>
 
-            <img src="Images\menu-bar.svg" alt="menubar" id="menu-bar">
-            <img src="Images\logo.svg" alt="logo" id="company">
-            <img src="Images\search-icon.svg" alt="logo" id="search">
-            <div id="searchtxt">Search</div>
-            <img src="Images\notification-icon.svg" alt="bell" id="notification">
-            <img src="Images\profile.png" alt="profile" id="profile">
-            <div id="name">John doe</div>
-            <img src="Images\downward-arrow.svg" alt="aerrow" id="aerrow">
+                    <div class="row ms-5 my-3">
+                        <div class="col-md-6 "><input class="form-control" type="password" placeholder="Password"
+                                aria-label="default input example"> </div>
+                        <div class="col-md-6 mt-3 ">
+                            <div class="input-group">
+                                <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>Dropdown</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form-header ms-5 my-3"> Three column</div>
+                    <div class="row ms-5 my-3 ">
+                        <div class="col-md-4"><input class="form-control" type="text"
+                                aria-label="default input example" style="border: 1px solid #c8242f"> </div>
+                        <div class="col-md-4 "><input class="form-control" type="password" placeholder="Password"
+                                aria-label="default input example" value="........."> </div>
+                        <div class="col-md-4"> <input class="form-control" type="text" value="johndoe"
+                                style="border: 1px dashed #ADADAD;"></div>
+                    </div>
+                    <div class="row form-header ms-5 my-3"> Four column</div>
+
+                    <div class="row ms-5 my-3">
+                        <div class="col-md-3">
+                            <input class="form-control" type="text" placeholder="Designation"
+                                aria-label="default input example" style="border: 1px solid red;">
+                            <small id="uidesign">Enter Valid Data</small>
+                        </div>
+                        <div class="col-md-3 ">
+                            <input class="form-control" type="text" placeholder="Name"
+                                aria-label="default input example">
+                            <small class="form-text text-muted">Enter your full name as per ID</small>
+                        </div>
+                        <div class="col-md-3">
+                            <input class="form-control" type="text" placeholder="Username"
+                                aria-label="default input example" value="johndoe">
+                        </div>
+                        <div class="col-md-3 mt-3">
+                            <div class="input-group">
+                                <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row form-header ms-5 my-3"> Other Design elements</div>
+                    <div class="row form-header ms-5 my-3"> File Upload</div>
+
+                    <div class="row ms-5 my-3">
+                        <div id="btn">
+                            <label for="exampleFormControlFile1">
+                                <img src="Images\cloud-upload-icon.svg" alt="cloud">
+                                <span style="color:red;">Upload</span>
+                            </label>
+                        </div>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1" hidden>
+                        <div class="col"><span>No item Selected</span></div>
+                    </div>
+
+                    <div class="row form-header ms-5 my-3"> Radio buttons</div>
+
+                    <div class="form-check form-check-inline ms-4 ">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"
+                            style="accent-color: red;">
+                        <label class="form-check-label" for="inlineRadio1">Option1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked
+                            style="accent-color: red;">
+                        <label class="form-check-label" for="inlineRadio2">Option2</label>
+                    </div>
+
+                    <div class="row form-header ms-5 my-3"> Checkbox</div>
+
+                    <div class="form-check form-check-inline ms-4 ">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1" style="accent-color: red;">
+                        <label class="form-check-label" for="inlineCheckbox1">Option1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" id="inlineCheckbox2" value="option2" checked style="accent-color: red;">
+                        <label class="form-check-label" for="inlineCheckbox2">Option2</label>
+                    </div>
+
+                    <div class="form-header row ms-5 my-3">Snackbar</div>
+                    <div class="snackBar row ms-5 my-3">
+                        <div class="col-md-6">
+                            <div class="left squareBox border-danger text-danger">
+                                <img src="images/error-icon.svg" alt=""><span class="message text-error">This is an
+                                    error message!</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="right squareBox" style="border: 1px solid #00B9E1; color: #00B9E1;">
+                                <img src="images/info-icon.svg" alt=""><span class="message">This is an information
+                                    message!</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="snackBar row ms-5 my-3">
+                        <div class="col-md-6">
+                            <div class="left squareBox border-warning text-warning">
+                                <img src="images/warning-icon.svg" alt=""><span class="message">This is a warning
+                                    message!</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="right squareBox border-success text-success">
+                                <img src="images/success-icon.svg" alt=""><span class="message">This is a Success
+                                    message!</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-header row ms-5 my-3">Call to action</div>
+                    <div class="row ms-5 my-3">
+                        <div class="callTOAction d-flex">
+                            <button type="button" class="btn btn-danger rounded-pill"
+                                style="margin-right: 15px; width: 124px;">Primary</button>
+                            <button type="button" class="btn btn-outline-danger rounded-pill"
+                                style="width: 145px;">Secondary</button>
+                        </div>
+                    </div>
+
+                    <div class="form-header row ms-5 my-3">Tabs</div>
+                    <div class="row ms-4 my-3">
+                        <div class="tab-title">
+                            <button type="button" id="button1" style="color: red;" onclick="FirstTab()">Tab 1</button>
+                            <button type="button" id="button2" onclick="SecondtTab()">Tab 2</button>
+                            <button type="button" id="button3" onclick="ThirdTab()">Tab 3</button>
+                        </div>
+
+                        <div class="tab-content">
+                            <span id="tab1-content" style="display:block;">Lorem Ipsum is simply dummy text of the
+                                printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                                it to make a type specimen book. It has survived not only five centuries, but also the
+                                leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+                                the 1960s with the release of Letraset sheets containing</span>
+                            <span id="tab2-content" style="display: none;">Korem Ipsum is simply dummy text of the
+                                printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                                it to make a type specimen book. It has survived not only five centuries, but also the
+                                leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+                                the 1960s with the release of Letraset sheets containing</span>
+                            <span id="tab3-content" style="display: none;">Morem Ipsum is simply dummy text of the
+                                printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                                it to make a type specimen book. It has survived not only five centuries, but also the
+                                leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+                                the 1960s with the release of Letraset sheets containing</span>
+                        </div>
+
+
+
+                        <script>
+                            function FirstTab() {
+                                document.getElementById("tab1-content").style.display = "block";
+                                document.getElementById("tab2-content").style.display = "none";
+                                document.getElementById("tab3-content").style.display = "none";
+                                document.getElementById("button1").style.color = "red";
+
+                                document.getElementById("button2").style.color = "black";
+                                document.getElementById("button3").style.color = "black";
+
+
+                            }
+                            function SecondtTab() {
+                                document.getElementById("tab1-content").style.display = "none";
+                                document.getElementById("tab2-content").style.display = "block";
+                                document.getElementById("tab3-content").style.display = "none";
+                                document.getElementById("button2").style.color = "red";
+
+                                document.getElementById("button1").style.color = "black";
+                                document.getElementById("button3").style.color = "black";
+                            }
+                            function ThirdTab() {
+                                document.getElementById("tab1-content").style.display = "none";
+                                document.getElementById("tab2-content").style.display = "none";
+                                document.getElementById("tab3-content").style.display = "block";
+                                document.getElementById("button3").style.color = "red";
+                                document.getElementById("button1").style.color = "black";
+                                document.getElementById("button2").style.color = "black";
+                            }
+                        </script>
+                    </div>
+                </div>
 
         </div>
-        <div class="innerpagesidebar">
-            <img src="Images\dashboard-default.svg" alt="deshboard" id="dashboard2">
-            <div id="dashtxt2">Dashboard</div>
 
-            <div id="active2"><img src="Images\graph-active.svg" alt="graph" id="analysis2">
-                <div id="anatxt2">Analysis</div>
-            </div>
-            <img src="Images\inbox-default.svg" alt="menubar" id="inbox">
-            <div id="inbtxt">Inbox</div>
-            <img src="Images\clock-default.svg" alt="menubar" id="history">
-            <div id="histxt">History</div>
-            <img src="Images\user-default.svg" alt="menubar" id="user-logo">
-            <div id="usetxt">Users</div>
-            <img src="Images\maintenance-default.svg" alt="menubar" id="Maintenance">
-            <div id="mentxt">Maintenance</div>
-            <img src="Images\setting-default.svg" alt="menubar" id="setting">
-            <div id="settxt">Setting</div>
-        </div>
-        <div id="Ana"><strong>Analysis</strong></div>
-
-        <div id="form">
-            <div id="onecolumn"><span>One Column</span></div>
-            <form>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
-                </div>
-                <div class="form-group-2">
-                    <select class="form-control" required>
-                        <option selected value="">Dropdown</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
-                </div>
-                <div class="form-group-3">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
-                        placeholder="Multiple line"></textarea>
-                </div>
-            </form>
-            <div id="twocolumn"><span>Two Column</span></div>
-
-            <form>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder=" Name">
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" value="johndoe">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <input type="password" class="form-control" placeholder="Password">
-                    </div>
-                    <div class="col">
-                        <select class="form-control" required>
-                            <option selected value="">Dropdown</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </div>
-                </div>
-            </form>
-            <div id="threecolumn"><span>Three Column</span></div>
-            <form>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="col">
-                        <input type="password" class="form-control" value=".........">
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" value="johndoe" id="iuser">
-                    </div>
-                </div>
-            </form>
-            <div id="fourcolumn"><span>Four Column</span></div>
-            <form>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" value="UI designer" id="uiborder">
-                        <small id="uidesign">Enter Valid Data</small>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Name">
-                        <small class="form-text text-muted">Enter your full name as per ID</small>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" value="johndoe">
-                    </div>
-                    <div class="col">
-                        <select class="form-control" required>
-                            <option selected value="">Select</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </div>
-                </div>
-            </form>
-            <div id="otherdesign"><span>Other Design Elements</span></div>
-            <div id="fileupload"><span>File Upload</span></div>
-            <form>
-                <div class="form-group">
-                    <div class="btn">
-                        <label for="exampleFormControlFile1">
-                            <img src="Images\cloud-upload-icon.svg" alt="cloud">
-                            <span id="up">Upload</span>
-                        </label>
-                    </div>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1" hidden>
-                    <span id="item">No item Selected</span>
-                </div>
-            </form>
-            <div id="radio"><span>Radio Button</span></div>
-            <div class="form-group-3">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                        value="option1">
-                    <label class="form-check-label" for="inlineRadio1">Option 1</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                        value="option2" checked >
-                    <label class="form-check-label" for="inlineRadio2">Option 2</label>
-                </div>
-            </div>
-            <div id="checkbox"><span>Checkbox</span></div>
-            <div class="form-group-3">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Option 1</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" checked>
-                    <label class="form-check-label" for="inlineCheckbox2" >Option 2</label>
-                </div>
-            </div>
-            <div id="snackbar"><span>Snackbar</span></div>
-            <div class="row">
-                <div class="col" id="column">
-                    <img src="Images\error-icon.svg" alt="error" id="error">
-                    <span id="errortxt">This is an error message</span>
-                </div>
-                <div class="col" id="column2">
-                    <img src="Images\info-icon.svg" alt="info" id="information">
-                    <span id="infotxt">This is an Information message!</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col" id="column3">
-                    <img src="Images\warning-icon.svg" alt="warning" id="warning">
-                    <span id="warningtxt">This is a warning message!</span>
-                </div>
-                <div class="col" id="column4">
-                    <img src="Images\success-icon.svg" alt="Success" id="success">
-                    <span id="successtxt">This is an Success message</span>
-                </div>
-            </div>
-            <div id="action"><span>Call to action</span></div>
-            <div class="form-group-3">
-                <button type="button" class="btn1 btn-primary">Primary</button>
-                <button type="button" class="btn2 btn-secondary">Secondary</button>
-            </div>
-            <div id="tab"><span>Tabs</span></div>
-            <div class="tab">
-                <div style="color: #C8242F; border-bottom: 2px solid #C8242F;">Tab 1</div>
-                <div style="color: #ADADAD;">Tab 2</div>
-                <div style="color: #ADADAD;">Tab 3</div>
-            </div>
-            <p style="margin: 22px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</p>
-        </div>
     </div>
 
+    </div>
+    </div>
+    </main>
+    <!--Main layout-->
+
+    <script src="js\custom.js"></script>
+    <script src="js\bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
